@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Residencial Joana — alojamento confortável, acolhedor e com reservas online.">
+  <title>Residencial Joana | Reservas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#inicio">Residencial <span>Joana</span></a>
+    <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    <nav class="nav-links">
+      <a href="#quartos">Quartos</a>
+      <a href="#comodidades">Comodidades</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contactos">Contactos</a>
+      <a class="nav-cta" href="#reservar">Reservar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">CONFORTO • HOSPITALIDADE • TRANQUILIDADE</p>
+    <h1>Uma estadia que<br><em>faz você sentir-se em casa.</em></h1>
+    <p class="hero-text">Descanse, relaxe e aproveite uma experiência acolhedora no Residencial Joana.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#reservar">Fazer uma reserva</a>
+      <a class="btn btn-ghost" href="#quartos">Ver quartos</a>
+    </div>
+  </div>
+</section>
+
+<section class="quick-book">
+  <div class="container quick-grid">
+    <div><small>CHECK-IN</small><strong>Escolha a data</strong></div>
+    <div><small>CHECK-OUT</small><strong>Escolha a data</strong></div>
+    <div><small>HÓSPEDES</small><strong>1–6 hóspedes</strong></div>
+    <a class="btn btn-primary" href="#reservar">Consultar disponibilidade</a>
+  </div>
+</section>
+
+<section id="quartos" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">ACOMODAÇÃO</p><h2>Quartos pensados para o seu descanso</h2></div>
+      <p>Escolha o quarto ideal para a sua estadia. Os preços abaixo são exemplos e podem ser facilmente alterados no ficheiro <b>script.js</b>.</p>
+    </div>
+
+    <div class="room-grid">
+      <article class="room-card">
+        <div class="room-photo photo-1"><span>Quarto Solteiro</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Solteiro</h3><strong>25.500 Kz <small>/ noite</small></strong></div>
+          <p>Quarto confortável para uma pessoa.</p>
+          <div class="features"><span>🛏️ 1 cama</span><span>👤 1 pessoa</span><span>🚿 Casa de banho</span></div>
+          <button class="text-btn reserve-room" data-room="Solteiro">Reservar este quarto →</button>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="room-photo photo-2"><span>Quarto Casal</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Casal</h3><strong>31.500 Kz <small>/ noite</small></strong></div>
+          <p>Quarto acolhedor para duas pessoas.</p>
+          <div class="features"><span>🛏️ 1 cama</span><span>👤 2 pessoas</span><span>🚿 Casa de banho</span></div>
+          <button class="text-btn reserve-room" data-room="Casal">Reservar este quarto →</button>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="room-photo photo-3"><span>Casal Maior</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Casal Maior</h3><strong>40.500 Kz <small>/ noite</small></strong></div>
+          <p>Mais espaço e conforto para uma estadia especial.</p>
+          <div class="features"><span>🛏️ 1 cama</span><span>👤 2 pessoas</span><span>❄️ Ar condicionado</span></div>
+          <button class="text-btn reserve-room" data-room="Casal Maior">Reservar este quarto →</button>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="room-photo photo-1"><span>Solteiro Maior</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Solteiro Maior</h3><strong>28.500 Kz <small>/ noite</small></strong></div>
+          <p>Quarto individual mais espaçoso e confortável.</p>
+          <div class="features"><span>🛏️ 1 cama</span><span>👤 1 pessoa</span><span>🚿 Casa de banho</span></div>
+          <button class="text-btn reserve-room" data-room="Solteiro Maior">Reservar este quarto →</button>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="room-photo photo-2"><span>Quarto Duplo</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Duplo</h3><strong>40.500 Kz <small>/ noite</small></strong></div>
+          <p>Quarto espaçoso para uma estadia confortável.</p>
+          <div class="features"><span>🛏️ 2 camas</span><span>👤 2 pessoas</span><span>📺 TV</span></div>
+          <button class="text-btn reserve-room" data-room="Duplo">Reservar este quarto →</button>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="room-photo photo-3"><span>Casal K</span></div>
+        <div class="room-body">
+          <div class="room-title"><h3>Casal K</h3><strong>35.500 Kz <small>/ noite</small></strong></div>
+          <p>Uma opção confortável para duas pessoas.</p>
+          <div class="features"><span>🛏️ 1 cama</span><span>👤 2 pessoas</span><span>🚿 Casa de banho</span></div>
+          <button class="text-btn reserve-room" data-room="Casal K">Reservar este quarto →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="comodidades" class="section soft">
+  <div class="container">
+    <div class="center-heading"><p class="eyebrow">COMODIDADES</p><h2>Tudo para uma estadia tranquila</h2></div>
+    <div class="amenities">
+      <div><span>📶</span><h3>Wi-Fi</h3><p>Internet disponível para os hóspedes.</p></div>
+      <div><span>🚗</span><h3>Estacionamento</h3><p>Espaço para estacionar com comodidade.</p></div>
+      <div><span>🧹</span><h3>Limpeza</h3><p>Ambientes preparados para receber você.</p></div>
+      <div><span>🛎️</span><h3>Atendimento</h3><p>Estamos disponíveis para ajudar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section about">
+  <div class="container about-grid">
+    <div class="about-image"><div class="image-label">RESIDENCIAL JOANA</div></div>
+    <div>
+      <p class="eyebrow">SOBRE NÓS</p>
+      <h2>Hospitalidade simples, confortável e próxima.</h2>
+      <p>O Residencial Joana foi pensado para receber hóspedes que procuram um lugar confortável para descansar, trabalhar ou passar alguns dias com tranquilidade.</p>
+      <p>Personalize este texto com a história real do seu hotel, os principais diferenciais e a localização.</p>
+      <a class="btn btn-dark" href="#reservar">Quero reservar</a>
+    </div>
+  </div>
+</section>
+
+<section id="reservar" class="section booking">
+  <div class="container booking-grid">
+    <div>
+      <p class="eyebrow">RESERVAS</p>
+      <h2>Faça o seu pedido de reserva</h2>
+      <p>Preencha os dados. Ao enviar, o pedido será preparado para ser enviado pelo WhatsApp do hotel.</p>
+      <div class="booking-note"><b>Importante:</b> esta versão gratuita funciona como pedido de reserva. A confirmação final é feita pelo hotel.</div>
+    </div>
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row">
+        <label>Nome completo<input name="name" required placeholder="Seu nome"></label>
+        <label>Telefone / WhatsApp<input name="phone" required placeholder="+244 ..."></label>
+      </div>
+      <div class="form-row">
+        <label>Check-in<input type="date" name="checkin" required></label>
+        <label>Check-out<input type="date" name="checkout" required></label>
+      </div>
+      <div class="form-row">
+        <label>Tipo de quarto
+          <select name="room" required>
+            <option value="">Selecione</option><option>Solteiro — 25.500 Kz</option><option>Casal — 31.500 Kz</option><option>Casal Maior — 40.500 Kz</option><option>Solteiro Maior — 28.500 Kz</option><option>Duplo — 40.500 Kz</option><option>Casal K — 35.500 Kz</option>
+          </select>
+        </label>
+        <label>Hóspedes<select name="guests" required>
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+        </select></label>
+      </div>
+      <label>Observações<textarea name="notes" rows="3" placeholder="Algum pedido especial?"></textarea></label>
+      <button class="btn btn-primary full" type="submit">Enviar pedido de reserva via WhatsApp</button>
+      <p class="form-small">Ao clicar, o WhatsApp será aberto com os dados preenchidos.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contactos" class="contact-strip">
+  <div class="container contact-grid">
+    <div><small>FALE CONNOSCO</small><h3>Pronto para receber você.</h3></div>
+    <a href="tel:+244900000000">📞 +244 924 613 490</a>
+    <a href="mailto:reservas@residencialjoana.com">✉️ reservas@residencialjoana.com</a>
+    <span>📍 Luanda, Angola</span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><b>Residencial Joana</b><p>Conforto para a sua estadia.</p></div>
+    <p>© <span id="year"></span> Residencial Joana. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/244924613490" target="_blank" rel="noopener" aria-label="WhatsApp">☘</a>
+<script src="script.js"></script>
+</body>
+</html>
